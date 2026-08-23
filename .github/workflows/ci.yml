@@ -7,10 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/setup-node@v4 # It's a reference to... not a local file
+        uses: actions/checkout@v4 # It's a reference to... not a local file
 
       - name: Setup Node
-        uses: actions/checkout@v4
+        uses: actions/setup-node@v4
         with:
           node-version: 24
       
