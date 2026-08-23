@@ -6,7 +6,7 @@ This project aims to create a CI/CD pipeline step by step and document it:
 - [Workflow File](#workflow-file)
 
 ## Workflow File
-Github actions is configured entirely through YAML files living in a specific folder: `.github/workflow/`
+Github actions is configured entirely through YAML files living in a specific folder: `.github/workflows/`
 
 Any `.yml` file in there is a *workflow*. Github watches for events (like push) and, if a workflow says "I care about this event", it triggers.
 
@@ -29,3 +29,6 @@ jobs:
       - name: Say hello
         run: echo "Hello from the runner!"
 ```
+
+Github actions:
+![First workflow](./src/assets/screenshots/first-workflow.png)
