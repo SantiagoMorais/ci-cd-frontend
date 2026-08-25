@@ -144,3 +144,13 @@ Caching stores previously-downloaded packages, keyed by a hash of `pnpm-lock.yam
 ```
 
 Verified: first run showed `downloaded 152, added 152` (21s total). Second run (no dependency changes) showed `reused 152, downloaded 0` (12s total) — proof the cache was used.
+
+## Debugging Real CI Failures
+
+**1. `ERR_PNPM_IGNORED_BUILDS`**
+pnpm v10+ blocks packages' install/postinstall scripts by default (supply-chain security — a malicious package could run arbitrary code on install). Approve needed packages locally with `pnpm approve-builds`, which writes to `pnpm-workspace.yaml`. Commit that file so CI has the same approval.
+
+**2. `ERR_PNPM_BAD_PM_VERSION` (multiple pnpm versions specified)**
+Don't pin the pnpm version in _two_ places. `package.json`'s `packageManager` field (set automatically when you install/upgrade pnpm via Corepack) is the single source of truth — remove any explicit `version:` from `pnpm/action-setup@v4` in the workflow and let it read from `package.json` instead.
+
+

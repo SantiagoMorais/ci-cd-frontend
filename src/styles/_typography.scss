@@ -1,0 +1,185 @@
+@mixin display($size) {
+  @if $size == 1 {
+    font-family: "Lexend Deca";
+    font-size: var(--font-size-5xl);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 8rem;
+  }
+
+  @if $size == 2 {
+    font-family: "Lexend Deca";
+    font-size: var(--font-size-4xl);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
+
+  @if $size == 3 {
+    font-family: "Lexend Deca";
+    font-size: var(--font-size-3xl);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
+}
+
+@mixin heading($size) {
+  @if $size == 1 {
+    font-family: "Lexend Deca";
+    font-size: var(--font-size-2xl);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
+
+  @if $size == 2 {
+    font-family: "Lexend Deca";
+    font-size: var(--font-size-xl);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
+
+  @if $size == 3 {
+    font-family: "Lexend Deca";
+    font-size: var(--font-size-lg);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
+
+  @if $size == 4 {
+    font-family: "Lexend Deca";
+    font-size: var(--font-size-md);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
+
+  @if $size == 5 {
+    font-family: "Lexend Deca";
+    font-size: var(--font-size-base);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
+
+  @if $size == 6 {
+    font-family: "Lexend Deca";
+    font-size: var(--font-size-sm);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+  }
+}
+
+@mixin label($size) {
+  @if $size == 1 {
+    font-family: "Lato";
+    font-size: var(--font-size-md);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+  }
+
+  @if $size == 2 {
+    font-family: "Lato";
+    font-size: var(--font-size-base);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+  }
+
+  @if $size == 3 {
+    font-family: "Lato";
+    font-size: var(--font-size-sm);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+  }
+
+  @if $size == 4 {
+    font-family: "Lato";
+    font-size: var(--font-size-xs);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+  }
+
+  @if $size == 5 {
+    font-family: "Lato";
+    font-size: var(--font-size-2xs);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+
+  @if $size == 6 {
+    font-family: "Lato";
+    font-size: var(--fonts-size-3xs);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+}
+
+@mixin body($size) {
+  @if $size == 1 {
+    font-family: "Lato";
+    font-size: var(--font-size-md);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  @if $size == 2 {
+    font-family: "Lato";
+    font-size: var(--font-size-base);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  @if $size == 3 {
+    font-family: "Lato";
+    font-size: var(--font-size-sm);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  @if $size == 4 {
+    font-family: "Lato";
+    font-size: var(--font-size-xs);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  @if $size == 5 {
+    font-family: "Lato";
+    font-size: var(--font-size-2xs);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  @if $size == 6 {
+    font-family: "Lato";
+    font-size: var(--fonts-size-3xs);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+}
+
+@mixin caution($size) {
+  @if $size == 1 {
+    font-family: "Lato";
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5rem;
+  }
+}

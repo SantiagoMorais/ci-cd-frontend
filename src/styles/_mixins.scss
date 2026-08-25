@@ -1,0 +1,35 @@
+// size queries
+$phone: "max-width:767px";
+$tablet-up: "min-width:768px";
+$notebook-up: "min-width:1024px";
+$desktop-up: "min-width:1366px";
+$large-desktop-up: "min-width: 1920px";
+
+// media queries
+@mixin media($size) {
+  @if $size == "phone" {
+    @media (#{$phone}) {
+      @content; // only size
+    }
+  }
+  @if $size == "tablet-up" {
+    @media (#{$tablet-up}) {
+      @content;
+    }
+  }
+  @if $size == "notebook-up" {
+    @media (#{$notebook-up}) {
+      @content;
+    }
+  }
+  @if $size == "desktop-up" {
+    @media (#{$desktop-up}) {
+      @content;
+    }
+  }
+  @if $size == "large-desktop-up" {
+    @media (#{$large-desktop-up}) {
+      @content;
+    }
+  }
+}
