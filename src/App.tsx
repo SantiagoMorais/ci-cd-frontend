@@ -1,5 +1,13 @@
 import styles from "./app.module.scss";
 
 export const App = () => {
-  return <div className={styles.app}>Hello World</div>;
+  return (
+    <div className={styles.app}>
+      <header></header>
+      <main>
+        <section></section>
+        <aside></aside>
+      </main>
+    </div>
+  );
 };
