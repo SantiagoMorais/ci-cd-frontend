@@ -12,6 +12,7 @@
     "generate:scss-types--watch": "typed-scss-modules src --watch --ignore '*/_.scss' --additionalData '@use \"src/styles/_mixins.scss\" as *;@use \"src/styles/_typography.scss\" as *;'"
   },
   "dependencies": {
+    "@hookform/resolvers": "^5.9.1",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "react-hook-form": "^7.86.0",
