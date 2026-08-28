@@ -1,3 +1,40 @@
 .app {
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  flex-shrink: 0;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.title {
+  @include heading(2);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0;
+  color: var(--color-text);
+}
+
+.subtitle {
+  @include body(3);
+  margin: 0.25rem 0 0;
+  color: var(--color-text-muted);
+}
+
+.main {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: 1fr 22rem;
+  gap: 1.5rem;
+  padding: 1.5rem 2rem;
+
+  @include media("phone") {
+    grid-template-columns: 1fr;
+  }
 }
