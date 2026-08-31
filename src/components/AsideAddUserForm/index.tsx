@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { FiUserPlus } from "react-icons/fi";
-import styles from "./AsideAddUserForm.module.scss";
+import styles from "./index.module.scss";
 import { phoneMask } from "../../utils/format";
 import { addUserSchema, type IUser } from "../../types/user";
 

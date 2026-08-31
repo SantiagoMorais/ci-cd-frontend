@@ -1,5 +1,5 @@
 import { FiChevronLeft, FiChevronRight, FiTrash2 } from "react-icons/fi";
-import styles from "./UserTable.module.scss";
+import styles from "./index.module.scss";
 import { getInitials } from "../../utils/format";
 import { useUserFilters } from "../../hooks/useUserFilters";
 import { usePagination } from "../../hooks/usePagination";
@@ -12,8 +12,15 @@ interface UserTableProps {
 
 export const UserTable = ({ users, onRemove }: UserTableProps) => {
   const { filters, setFilter, filteredUsers } = useUserFilters(users);
-  const { page, pageSize, totalPages, pageStart, paginatedItems, setPage, setPageSize } =
-    usePagination(filteredUsers);
+  const {
+    page,
+    pageSize,
+    totalPages,
+    pageStart,
+    paginatedItems,
+    setPage,
+    setPageSize,
+  } = usePagination(filteredUsers);
 
   return (
     <section className={styles.listCard}>
@@ -133,8 +140,9 @@ export const UserTable = ({ users, onRemove }: UserTableProps) => {
               </select>
             </label>
             <span className={styles.pageInfo}>
-              {pageStart + 1}-{Math.min(pageStart + pageSize, filteredUsers.length)}{" "}
-              of {filteredUsers.length}
+              {pageStart + 1}-
+              {Math.min(pageStart + pageSize, filteredUsers.length)} of{" "}
+              {filteredUsers.length}
             </span>
             <div className={styles.pageButtons}>
               <button

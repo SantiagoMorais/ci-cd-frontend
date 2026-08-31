@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { FiUsers } from "react-icons/fi";
 import styles from "./app.module.scss";
-import { UserTable } from "./components/UserTable/UserTable";
-import { AsideAddUserForm } from "./components/AsideAddUserForm/AsideAddUserForm";
+import { UserTable } from "./components/UserTable";
+import { AsideAddUserForm } from "./components/AsideAddUserForm";
 import { addUser, loadUsers, removeUser } from "./services/userService";
 import type { IUser, IUserRecord } from "./types/user";
 
